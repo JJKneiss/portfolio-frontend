@@ -80,6 +80,11 @@ const Project = props => {
             </h3>
             <p>{description}</p>
             <ul>
+                <li>{frontEnd}</li>
+                <li>{backEnd}</li>
+
+            </ul>
+            <ul>
                 {iconStack}
             </ul>
         </article >
