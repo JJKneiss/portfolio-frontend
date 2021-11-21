@@ -14,7 +14,7 @@ const Views = () => {
                 <Route exact path='/' element={<Home />} />
                 <Route exact path='/home' element={<Home />} />
                 <Route exact path='/portfolio' element={<Portfolio />} />
-                <Route exact path='/portfolio:name' element={<Project />} />
+                <Route exact path='/portfolio/:name' element={<Project />} />
                 <Route exact path='/blog' element={<Blog />} />
                 <Route exact path='/contact' element={<Contact />} />
                 <Route

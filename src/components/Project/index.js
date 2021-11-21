@@ -1,20 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import html from '../../images/html-icon.png'
-import react from '../../images/react-icon.png'
-import sass from '../../images/sass-icon.png'
-import node from '../../images/nodejs.png'
-import heroku from '../../images/heroku-icon.png'
-import express from '../../images/express-icon.png'
-
+import Icon from '../Icon';
 
 /* JK: Basic Nav */
 const Project = props => {
+    let id = props.val.id;
     let name = props.val.name;
     let description = props.val.description;
     let frontEnd = props.val.frontEnd;
     let backEnd = props.val.backEnd;
+    let thumbnailImage = props.val.thumbnailImage;
+    let siteLink = props.val.siteLink;
+
 
     let frontEndItems = frontEnd.split('/');
     let backEndItems = backEnd.split('/');
@@ -30,63 +28,49 @@ const Project = props => {
     let icon;
     let iconStack;
     iconStack = listings.map((element, index) => {
+
         if (element.includes("SASS")) {
-            icon = (<li>
-                <img key={element.id} val={element} src={sass} height={40} alt="sass icon" />
-            </li>)
+            icon = (<Icon iconKey={index} iconVal={element} name="SASS" src={'https://drive.google.com/uc?export=view&id=1xOFi9wH_KhRa0pg5mNSC4s7YMr2F8fBR'} />)
         }
         else if (element.includes("React")) {
-            icon = (<li>
-                <img key={element.id} val={element} src={react} height={40} alt="react icon" />
-            </li>)
+            icon = (<Icon iconKey={index} iconVal={element} name="ReactJS" src={'https://drive.google.com/uc?export=view&id=10sjd8u_5jhlTXybqMPvf0EopobBJ68Bw'} />)
         }
         else if (element.includes("HTML")) {
-            icon = (<li>
-                <img key={element.id} val={element} src={html} height={40} alt="html icon" />
-            </li>)
-        }
-        else if (element.includes("CSS")) {
-            icon = (<li>
-                <img key={element.id} val={element} src={html} height={40} alt="css icon" />
-            </li>)
+            icon = (<Icon iconKey={index} iconVal={element} name="HTML" src={'https://drive.google.com/uc?export=view&id=1anlEk4J-GnsZa2as0z684ih5CgADDTGT'} />)
         }
         else if (element.includes("Node")) {
-            icon = (<li>
-                <img key={element.id} val={element} src={node} height={40} alt="node icon" />
-            </li>)
+            icon = (<Icon iconKey={index} iconVal={element} name="NodeJS" src={'https://drive.google.com/uc?export=view&id=1oSVUJ6FjvYHpGsKFD2s8Le49pvL0oVR-'} height={40} alt="node icon" />)
         }
         else if (element.includes("Heroku")) {
-            icon = (<li>
-                <img key={element.id} val={element} src={heroku} height={40} alt="heroku icon" />
-            </li>)
+            icon = (<Icon iconKey={index} iconVal={element} name="Heroku" src={'https://drive.google.com/uc?export=view&id=1rTzMkHsMjGtTSoYW252V527qx23sy-IN'} height={40} alt="heroku icon" />)
         }
         else if (element.includes("Express")) {
-            icon = (<li>
-                <img key={element.id} val={element} src={express} height={40} alt="heroku icon" />
-            </li>)
-        } else {
+            icon = (<Icon iconKey={index} iconVal={element} name="Express" src={'https://drive.google.com/uc?export=view&id=1BjdBsqJciEaUOvjM6xCFa0MNBQFMECxL'} height={40} alt="express icon" />)
+        }
+        else {
             icon = (<li>
             </li>)
         }
-        console.log(element);
         return icon;
     });
     return (
         <article>
             <h3>
-                <NavLink to={`/portfolio/${name}`}>
+                <NavLink to={`/portfolio/${id}`}>
                     {name}
                 </NavLink>
             </h3>
-            <p>{description}</p>
-            <ul>
-                <li>{frontEnd}</li>
-                <li>{backEnd}</li>
-
-            </ul>
-            <ul>
-                {iconStack}
-            </ul>
+            <img src={thumbnailImage} height={224} />
+            <p>
+                {description}
+            </p>
+            <NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a>
+            <section>
+                <h3>Tech Stack</h3>
+                <ul>
+                    {iconStack}
+                </ul>
+            </section>
         </article >
     );
 }

@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Project from '../components/Project';
 
 export default function Portfolio() {
-    let url = "https://punkdev-portfolio-backend.herokuapp.com"
+    let url = "https://jamiekneiss-portfolio-backend.herokuapp.com"
     const [projects, setProjects] = useState();
 
     useEffect(() => {
@@ -12,7 +12,6 @@ export default function Portfolio() {
             try {
                 const response = await fetch(url + '/api/projects');
                 const data = await response.json();
-                console.log(data);
                 let arr = projects || [];
                 if (data.length === 0) {
                     alert("No results.");
@@ -23,7 +22,9 @@ export default function Portfolio() {
                         name: element.name,
                         description: element.description,
                         frontEnd: element.frontEnd,
-                        backEnd: element.backEnd
+                        backEnd: element.backEnd,
+                        siteLink: element.siteLink,
+                        thumbnailImage: element.thumbnailImage
                     }));
                     setProjects(arr);
                 }
@@ -43,7 +44,7 @@ export default function Portfolio() {
     return (
         <div className="App">
             <Header />
-            <h1>My <span>Portfolio</span></h1>
+            <h1 className="page-title">My <span>Portfolio</span></h1>
             <section>
                 {projectsList || "Loading"}
             </section>
