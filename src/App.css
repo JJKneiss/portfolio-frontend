@@ -45,11 +45,14 @@ nav{
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style:italic;
 }
-h3{
-  margin: 20px;
+article h3{
+  padding: 20px;
+}
+article{
+  border-radius: 4px;
 }
 section h3{
-  text-align: left;
+  /* text-align: left; */
 }
 p, ul, li{
   text-align: left;
@@ -60,6 +63,10 @@ p, ul, li{
 .sub-section{
   /* width: 50%; */
   float: left;
+}
+.sub-section h3{
+  /* width: 50%; */
+  text-align: left;
 }
 .tooltip {
   position: relative;
@@ -120,4 +127,10 @@ button[type=submit] {
   cursor: pointer;
 }button[type=submit]:hover {
   background-color: #25dadd;
+}
+article{
+  background-color: #222;
+}
+p{
+  margin: 20px;
 }

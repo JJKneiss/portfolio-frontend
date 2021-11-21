@@ -1,13 +1,24 @@
 import React from 'react';
 
 import Header from '../components/Header';
-
+import Icon from '../components/Icon';
+//1LZawFzmeNo7BstQWV9jA0e81rtWvizcF
 export default function Contact() {
     return (
         <div className="App">
             <Header />
             <h1>Contact <span>Me</span></h1>
             <h2>Let's Get In Touch!</h2>
+            <a href="https://github.com/JJKneiss">
+                <Icon name="github" src={'https://drive.google.com/uc?export=view&id=1LZawFzmeNo7BstQWV9jA0e81rtWvizcF'} />
+            </a>
+            <a href="https://twitter.com/jjkneiss">
+                <Icon name="twitter" src={'https://drive.google.com/uc?export=view&id=1Uu6jr-XyB211RQrV0vkUTaUFJfFjSN0X'} />
+            </a>
+
+            <a href="https://www.instagram.com/punkdev_jay/">
+                <Icon name="instagram" src={'https://drive.google.com/uc?export=view&id=1sl1PmP4xq-X7IFcBMig7c2RN1raaO36F'} />
+            </a>
             <div class="container">
                 <form>
                     <label>email</label>

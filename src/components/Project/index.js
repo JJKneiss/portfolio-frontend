@@ -64,7 +64,7 @@ const Project = props => {
             <p>
                 {description}
             </p>
-            <NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a>
+            <NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a> | <a href={siteLink}>View Live</a>
             <section>
                 <h3>Tech Stack</h3>
                 <ul>
