@@ -11,8 +11,11 @@ export default function Blog() {
                 <h1>My <span>Blog</span></h1>
                 <section>
                     <h2>This Page is currently in development!</h2>
-                    <h3>Come Back January 5th!</h3>
+                    <h3 style={{
+                        textAlign: 'center'
+                    }}>Come Back January 5th!</h3>
                     <p style={{
+                        textAlign: 'center',
                         margin: 100,
                         color: "#E8EFF4"
                     }}>

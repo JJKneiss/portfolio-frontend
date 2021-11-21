@@ -54,24 +54,29 @@ const Project = props => {
         return icon;
     });
     return (
-        <article>
+        <article style={{
+            padding: 10,
+            margin: 20
+        }}>
             <h3>
                 <NavLink to={`/portfolio/${id}`}>
                     {name}
                 </NavLink>
             </h3>
             <img src={thumbnailImage} height={224} />
-            <p>
+            <p style={{
+                width: 1050
+            }}>
                 {description}
             </p>
-            <NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a> | <a href={siteLink}>View Live</a>
+            <NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a>
             <section>
                 <h3>Tech Stack</h3>
-                <ul>
+                <ul className="skills">
                     {iconStack}
                 </ul>
             </section>
-        </article >
+        </article>
     );
 }
 

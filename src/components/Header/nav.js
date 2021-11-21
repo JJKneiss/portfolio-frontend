@@ -8,10 +8,10 @@ const Nav = (props, children) => {
     return (
         <nav>
             <ul className="links">
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-                <li><NavLink to="/blog">Blog</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
+                <li><NavLink activeClassName="active" to="/">Home</NavLink></li>
+                <li><NavLink activeClassName="active" to="/portfolio">Portfolio</NavLink></li>
+                <li><NavLink activeClassName="active" to="/blog">Blog</NavLink></li>
+                <li><NavLink activeClassName="active" to="/contact">Contact</NavLink></li>
             </ul>
         </nav >
     );
