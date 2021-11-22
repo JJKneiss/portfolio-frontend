@@ -26,11 +26,16 @@ header{
   justify-content: flex-end;
   padding: 2rem;
 }
-.icons{
+header a{
   margin-right: auto;
 }
+.icons{
+  margin-left: auto;
+}
 nav{
-  height: 30px;
+  height: 30px; 
+  margin-left: auto;
+
 }
 .links{
   margin-left: 0 auto;
@@ -50,6 +55,8 @@ article h3{
 }
 article{
   border-radius: 4px;
+  padding: 10px;
+  width: 1100
 }
 section h3{
   text-align: left;
@@ -61,6 +68,29 @@ p, ul, li{
   text-align: left;
   border-left: 2px solid #18C7C9;
   padding: 0 10px;
+  /* border-radius: 4px; */
+  position: relative;
+  margin: 10px 0;
+}
+.section-heading:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: fit-content;
+    width: 5px;
+    /* border-top: 3px solid #18C7C9; */
+    border-top: 3px solid #18C7C9;
+}
+.section-heading:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: fit-content;
+  width: 5px;
+  /* border-top: 3px solid #18C7C9; */
+  border-bottom: 3px solid #18C7C9;
 }
 .skills{
   background: #222;
@@ -111,7 +141,7 @@ img{
   padding: 20px;
   margin: 50px auto;
 }
-input[type=email], textarea {
+input[type=email], input[type=text], textarea {
   background-color: #333;
   color: #F6F7F8;
   width: 100%;
@@ -124,7 +154,7 @@ input[type=email], textarea {
   resize: vertical;
 }
 
-button[type=submit] {
+button[type=submit]{
   background-color: #18C7C9;
   color: white;
   padding: 12px 20px;
@@ -136,9 +166,35 @@ button[type=submit] {
 }
 article{
   background-color: #383838;
-  width: fit-content;
+  /* width: fit-content; */
   margin: 0 auto;
 }
 p{
   margin: 20px;
+}
+
+.skills-section{
+  display: flex;
+  justify-content: space-evenly;
+}
+.frontend{
+  /* margin-right: auto; */
+}
+.backend{
+  /* margin-left: auto; */
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

@@ -19,11 +19,16 @@ export default function Contact() {
             <a href="https://www.instagram.com/punkdev_jay/">
                 <Icon name="instagram" src={'https://drive.google.com/uc?export=view&id=1sl1PmP4xq-X7IFcBMig7c2RN1raaO36F'} />
             </a>
+            <a href="https://www.linkedin.com/in/jjkneiss/">
+                <Icon name="linkedin" src={'https://drive.google.com/uc?export=view&id=1OMXztdJ3vQyusTG9LTTXn6Ey8oL43kff'} />
+            </a>
             <div class="container">
                 <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Name" />
                     <label>email</label>
                     <input type="email" placeholder="Email" />
-                    <label>message</label>
+                    <label>Message</label>
                     <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
                     <button type="submit">Submit</button>
                 </form>

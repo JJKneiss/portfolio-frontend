@@ -25,7 +25,7 @@ const Views = () => {
                         </main>
                     }
                 />
-            </Routes >
+            </Routes>
         </Router>
     );
 }

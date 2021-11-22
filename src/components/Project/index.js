@@ -56,7 +56,8 @@ const Project = props => {
     return (
         <article style={{
             padding: 10,
-            margin: 20
+            margin: '20px auto',
+            width: 800
         }}>
             <h3>
                 <NavLink to={`/portfolio/${id}`}>
@@ -65,18 +66,15 @@ const Project = props => {
             </h3>
             <img src={thumbnailImage} height={224} />
             <p style={{
-                width: 1050
+                width: 'fit-content'
             }}>
                 {description}
             </p>
-            <NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a>
-            <section>
-                <h3>Tech Stack</h3>
-                <ul className="skills">
-                    {iconStack}
-                </ul>
-            </section>
-        </article>
+            <ul className="skills">
+                {iconStack}
+            </ul>
+            <p><NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a></p>
+        </article >
     );
 }
 
