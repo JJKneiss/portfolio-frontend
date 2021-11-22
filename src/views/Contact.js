@@ -2,12 +2,13 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Icon from '../components/Icon';
-//1LZawFzmeNo7BstQWV9jA0e81rtWvizcF
+import PageTitle from '../components/PageTitle';
 export default function Contact() {
+    document.title = 'Contact';
     return (
         <div className="App">
             <Header />
-            <h1>Contact <span>Me</span></h1>
+            <PageTitle text="Contact" highlight="Me" />
             <h2>Let's Get In Touch!</h2>
             <a href="https://github.com/JJKneiss">
                 <Icon name="github" src={'https://drive.google.com/uc?export=view&id=1LZawFzmeNo7BstQWV9jA0e81rtWvizcF'} />

@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 import Header from '../components/Header';
 import Project from '../components/Project';
+import PageTitle from '../components/PageTitle';
 
 export default function Portfolio() {
     let url = "https://jamiekneiss-portfolio-backend.herokuapp.com"
     const [projects, setProjects] = useState();
-
+    document.title = 'Portfolio';
     useEffect(() => {
         let loadAPI = async () => {
             try {
@@ -44,7 +45,7 @@ export default function Portfolio() {
     return (
         <div className="App">
             <Header />
-            <h1 className="page-title">My <span>Portfolio</span></h1>
+            <PageTitle text="My" highlight="Portfolio" />
             <section>
                 {projectsList || "Loading"}
             </section>

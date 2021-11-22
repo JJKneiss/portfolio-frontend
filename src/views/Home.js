@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Icon from '../components/Icon';
+import PageTitle from '../components/PageTitle';
 export default function Home() {
+    // const [title, setTitle] = useState('Loading');
+    // useEffect(() => {
+    //     setTitle("This is a cool title");
+    // }, []);
+    // setTitle('Home');
+    document.title = 'Home';
     return (
         <div className="App">
             <Header />
 
             <img src={'https://drive.google.com/uc?export=view&id=1Cbx3VgavHPJuzkJ9gRmTaL2Gl6B0QemT'} height={224} className="portrait" alt="portrait" />
-            <h1>
-                Jamie <span> Kneiss</span><span className="blink">_</span>
-            </h1>
+
+            <PageTitle text="Jamie" highlight="Kneiss" />
             <h2>React Focused Developer</h2>
             <section>
                 <h2 className="section-heading">About Me</h2>

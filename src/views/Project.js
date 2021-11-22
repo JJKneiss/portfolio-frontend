@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import Icon from '../components/Icon';
 
 import Header from '../components/Header';
-// import Project from '../components/Project';
+import PageTitle from '../components/PageTitle';
 
 export default function Portfolio() {
     let url = "https://jamiekneiss-portfolio-backend.herokuapp.com";
@@ -31,6 +31,7 @@ export default function Portfolio() {
                     alert("No results.");
                 }
                 else {
+                    document.title = data.name;
                     setProject({
                         id: data.id,
                         name: data.name,
@@ -90,7 +91,7 @@ export default function Portfolio() {
     return (
         <div className="App">
             <Header />
-            <h1>My <span>Portfolio</span></h1>
+            <PageTitle text="My" highlight="Portfolio" />
             <NavLink to="/portfolio"> {"<-- Back"} </NavLink>
             <section>
                 <h2>{project.name || 'Loading'}</h2>
