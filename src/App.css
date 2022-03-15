@@ -177,12 +177,6 @@ p{
   display: flex;
   justify-content: space-evenly;
 }
-.frontend{
-  /* margin-right: auto; */
-}
-.backend{
-  /* margin-left: auto; */
-}
 
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;

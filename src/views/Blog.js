@@ -13,7 +13,7 @@ export default function Blog() {
                 <h2>This Page is currently in development!</h2>
                 <h3 style={{
                     textAlign: 'center'
-                }}>Come Back January 5th for the first upload!</h3>
+                }}>Check back in April!</h3>
                 <p style={{
                     textAlign: 'center',
                     margin: 100,
