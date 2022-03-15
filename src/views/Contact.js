@@ -24,13 +24,16 @@ export default function Contact() {
                 <Icon name="linkedin" src={'https://drive.google.com/uc?export=view&id=1OMXztdJ3vQyusTG9LTTXn6Ey8oL43kff'} />
             </a>
             <div class="container">
-                <form>
-                    <label>Name</label>
-                    <input type="text" placeholder="Name" />
-                    <label>email</label>
-                    <input type="email" placeholder="Email" />
+                <form action="https://formsubmit.co/jamiejk@icloud.com" method="POST">
+                    {/* <label>Name</label>
+                    <input type="text" name="name" placeholder="Name" /> */}
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="email" required />
+                    <label>Subject</label>
+                    <input type="text" name="_subject" placeholder="subject" />
+
                     <label>Message</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                    <textarea id="message" type="text" name="message" placeholder="your message here..."></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
