@@ -22,7 +22,7 @@ export default function Home() {
             <section>
                 <h2 className="section-heading">About Me</h2>
                 <article>
-                    <p>Hi 👋, I'm Jamie, a React focused web developer with a passion for learning and helping others learn. My portfolio can be found <NavLink to="/portfolio">here</NavLink>.</p>
+                    <p>Hi 👋, I'm Jamie, a tenacious React focused web developer with a passion for learning and helping others learn. My portfolio can be found <NavLink to="/portfolio">here</NavLink>. A tenacious, problem-solving oriented web developer with a penchant for optimization where possible. What is lacked in experience is made up for in work ethic and a drive to continue learning and improving, whether that’s behind a monitor, in front of a client, or at home woodworking and trying (unsuccessfully) to cook a new meal.</p>
                 </article>
             </section>
             <section>
@@ -67,11 +67,12 @@ export default function Home() {
                 <article>
                     <p>In addition to my primary skills I've also grown proficient in both relational and nonrelational databases (primarily <span style={{
                         fontWeight: 'bold'
-                    }}>mongo and mysql</span>), alternate frontend frameworks (such as <span style={{
+                    }}>mongo and mysql</span>) and the basics of various AWS applications (specifically <span style={{
                         fontWeight: 'bold'
-                    }}>svelte and vue</span>), and the basics of various AWS applications (specifically <span style={{
+                    }}>S3, EC2, and serverless functions</span>). I also have taken up learning the basics of alternate frontend frameworks (such as <span style={{
                         fontWeight: 'bold'
-                    }}>S3, EC2, and serverless functions</span>).</p>
+                    }}>svelte and vue</span>)</p>
+
                 </article>
             </section>
             <section>
