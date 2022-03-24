@@ -22,13 +22,13 @@ export default function Home() {
             <section>
                 <h2 className="section-heading">About Me</h2>
                 <article>
-                    <p>Hi 👋, I'm Jamie, a tenacious React focused web developer with a passion for learning and helping others learn. My portfolio can be found <NavLink to="/portfolio">here</NavLink>. A tenacious, problem-solving oriented web developer with a penchant for optimization where possible. What is lacked in experience is made up for in work ethic and a drive to continue learning and improving, whether that’s behind a monitor, in front of a client, or at home woodworking and trying (unsuccessfully) to cook a new meal.</p>
+                    <p>Hi I'm Jamie, a tenacious problem solver, a React focused web developer, and an open book with a passion for learning and helping others learn. My portfolio can be found <NavLink to="/portfolio">here</NavLink>.</p>
                 </article>
             </section>
             <section>
                 <h2 className="section-heading">Technical Skills</h2>
                 <article>
-                    <p className="description">As my skillset grows I continue to realize just how important the fundamental skills are. I've grown a strong foundation in the following technologies and tools.</p>
+                    <p className="description">As my skillset grows I continue to realize just how important the fundamental skills are. I've grown a strong foundation in the following technologies and tools</p>
                     <div className="skills-section">
                         <div className="frontend">
                             <h3>Frontend</h3>
@@ -78,7 +78,7 @@ export default function Home() {
             <section>
                 <h2 className="section-heading">Soft Skills</h2>
                 <article>
-                    <p>During my time at Full Sail and in other roles I've gained a number of soft skills, including communication, research, a marked persistence, </p>
+                    <p>During my time at Full Sail and beyond I've gained a number of miscellaneous and soft skills including: communication, market research, a marked persistence, </p>
                 </article>
             </section>
             <section>
