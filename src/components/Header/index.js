@@ -2,8 +2,6 @@ import React from 'react';
 
 import Nav from './nav';
 
-import './Header.module.scss';
-import Icon from '../Icon';
 import { NavLink } from 'react-router-dom';
 const Header = (props, children) => {
     return (
