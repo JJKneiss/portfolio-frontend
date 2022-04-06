@@ -29,12 +29,7 @@ h1{
   font: 'Roboto Mono', monospace;
   font-weight: 300;
 }
-h2{
 
-}
-h3{
-
-}
 /* HEADER / NAV */
 header{
   z-index: 1;
@@ -161,9 +156,6 @@ article h3{
 }
 .section-heading:after{
   border-bottom: 3px solid var(--primary-color);
-}
-.section-heading a{
-  /* text-decoration: none; */
 }
 
 .skills{
