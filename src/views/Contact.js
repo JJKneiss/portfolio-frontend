@@ -24,8 +24,8 @@ export default function Contact() {
                 <Icon name="linkedin" src={'https://drive.google.com/uc?export=view&id=1OMXztdJ3vQyusTG9LTTXn6Ey8oL43kff'} />
             </a>
             <div className="container card bg-blur">
-                <form action="https://formsubmit.co/jamiejk@icloud.com" method="POST">
-                    {/* <label>Name</label>
+                <form action="https://formsubmit.co/e0f92e5a40ff6cd7d3023a3b660cda6c" method="POST">
+                    {/* <label>Name</label
                     <input type="text" name="name" placeholder="Name" /> */}
                     <label>Email</label>
                     <input type="email" name="email" placeholder="email" required />
