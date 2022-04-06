@@ -29,7 +29,12 @@ h1{
   font: 'Roboto Mono', monospace;
   font-weight: 300;
 }
+h2{
 
+}
+h3{
+
+}
 /* HEADER / NAV */
 header{
   z-index: 1;
@@ -137,18 +142,18 @@ article h3{
 /* SECTION HEADING */
 .section-heading{
   text-align: left;
-  border-left: 2px solid #18C7C9;
+  border-left: 2px solid var(--primary-color);
   padding: 0 10px;
-  border-radius: 4px;
   position: relative;
   margin: 10px 0;
 }
 .section-heading::before, .section-heading:after{
+
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  height: fit-content;
+  height: 29px;
   width: 5px;
 }
 .section-heading:before{
@@ -157,7 +162,9 @@ article h3{
 .section-heading:after{
   border-bottom: 3px solid var(--primary-color);
 }
-
+.section-heading a{
+  /* text-decoration: none; */
+}
 
 .skills{
   background: #222;

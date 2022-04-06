@@ -54,27 +54,31 @@ const Project = props => {
         return icon;
     });
     return (
-        <article style={{
-            padding: 10,
-            margin: '20px auto',
-            width: 800
-        }} className="card bg-blur">
-            <h3>
+        <section>
+            <h2 style={{
+                textAlign: 'left'
+            }}>
                 <NavLink to={`/portfolio/${id}`}>
                     {name}
                 </NavLink>
-            </h3>
-            <img src={thumbnailImage} height={224} />
-            <p style={{
-                width: 'fit-content'
+            </h2>
+            <article style={{
+                padding: 10,
+                margin: '20px auto',
+                // width: 800
             }}>
-                {description}
-            </p>
-            <ul className="skills">
-                {iconStack}
-            </ul>
-            <p><NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a></p>
-        </article >
+                <img src={thumbnailImage} height={224} />
+                <p style={{
+                    width: 'fit-content'
+                }}>
+                    {description}
+                </p>
+                <ul className="skills">
+                    {iconStack}
+                </ul>
+                <p><NavLink to={`/portfolio/${id}`}>Read More</NavLink> | <a href={siteLink}>View Live</a></p>
+            </article>
+        </section>
     );
 }
 
