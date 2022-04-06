@@ -15,10 +15,10 @@ export default function Home() {
         <div className="App">
             <Header />
 
-            <img src={'https://drive.google.com/uc?export=view&id=1Cbx3VgavHPJuzkJ9gRmTaL2Gl6B0QemT'} height={224} className="portrait" alt="portrait" />
+            <img src={'https://drive.google.com/uc?export=view&id=1Cbx3VgavHPJuzkJ9gRmTaL2Gl6B0QemT'} height={250} className="portrait" alt="portrait" />
 
             <PageTitle text="Jamie" highlight="Kneiss" />
-            <h2>React Focused Developer</h2>
+            <h2>Measure Twice, Code Once</h2>
             <section>
                 <h2 className="section-heading">About Me</h2>
                 <article>

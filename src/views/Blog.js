@@ -13,13 +13,13 @@ export default function Blog() {
                 <h2>This Page is currently in development!</h2>
                 <h3 style={{
                     textAlign: 'center'
-                }}>Check back in April!</h3>
+                }}>Check back in August 2022!</h3>
                 <p style={{
                     textAlign: 'center',
                     margin: 100,
                     color: "#E8EFF4"
                 }}>
-                    In the meantime if you would like to contact me feel free to do so <NavLink to="/contact">here</NavLink>
+                    In the meantime, if you would like to contact me feel free to do so <NavLink to="/contact">here</NavLink>.
                 </p>
             </section>
         </div >

@@ -23,7 +23,7 @@ export default function Contact() {
             <a href="https://www.linkedin.com/in/jjkneiss/">
                 <Icon name="linkedin" src={'https://drive.google.com/uc?export=view&id=1OMXztdJ3vQyusTG9LTTXn6Ey8oL43kff'} />
             </a>
-            <div class="container">
+            <div className="container card bg-blur">
                 <form action="https://formsubmit.co/jamiejk@icloud.com" method="POST">
                     {/* <label>Name</label>
                     <input type="text" name="name" placeholder="Name" /> */}

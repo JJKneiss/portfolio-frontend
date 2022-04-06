@@ -58,7 +58,7 @@ const Project = props => {
             padding: 10,
             margin: '20px auto',
             width: 800
-        }}>
+        }} className="card bg-blur">
             <h3>
                 <NavLink to={`/portfolio/${id}`}>
                     {name}
